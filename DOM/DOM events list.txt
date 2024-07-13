@@ -16,6 +16,7 @@ Keyboard Events
 keydown: Fires when a key is pressed.
 keypress: Fires when a key is pressed and released (deprecated in favor of keydown and keyup).
 keyup: Fires when a key is released.
+
 Form Events
 submit: Fires when a form is submitted.
 change: Fires when the value of an <input>, <select>, or <textarea> element has been changed.

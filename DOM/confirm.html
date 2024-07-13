@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Dialog Example</title>
+</head>
+<body>
+    <button id="confirmButton">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        document.getElementById("confirmButton").addEventListener('click',function(){
+            var newitem = confirm("Do you want to proceed ? ");
+
+            var msg = document.getElementById('message');
+
+            if(newitem){
+                msg.textContent='User clicked OK';
+            }
+            else{
+                msg.textContent='User cancelled to proceed further';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--DOM Manipulation-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head> 
+
+    <body>
+        <ul id="list">
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+        <button id="additem">Add Item</button>
+        <button id="removeitem">Remove Item</button>
+
+        <script>
+            document.getElementById("additem").addEventListener('click',function(){
+                var newitem = document.createElement('li');
+                newitem.textContent="new item";
+                document.getElementById('list').appendChild(newitem);
+            });
+            document.getElementById("removeitem").addEventListener('click',function(){
+                var item = document.getElementById('list');
+                if(item.children.length > 0){
+                    item.removeChild(item.lastChild);
+                }
+            });
+        </script>
+    </body>
+</html>

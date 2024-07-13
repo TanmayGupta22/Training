@@ -1,0 +1,29 @@
+- single threaded
+- synchronous
+
+
+- for asynchronous code 
+1 setTimout
+2 setInterval
+3 Promise
+4 fetch
+5 axios
+6 XmlHttpRequest
+
+- If we want output from side stacks
+1 callback : when we pass argument as function inside another function 
+2 then catch
+3 async await : we use then and cathc(this is not defination)
+
+
+first class function: when we are assigning a function to a variabble and the value that is returned by function is 
+stored in variable
+
+
+higher order function: when a function accepts a function as parameter or return function as parameter or both
+
+
+Constructor function: 
+
+
+Promise: 
